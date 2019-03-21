@@ -16,7 +16,7 @@
 <p>Base de dados</p>
 
 <p>Evento: ID_Evento-</p>
- <p> <center>Tipo</center></p>
+ <p>Tipo</p>
  <p> Nºde pessoas</p>
  <p> Organização</p>
   <p></p>
