@@ -1,7 +1,6 @@
 # AppHotel
-Creating the repository
-
-
+<p></p>
+<p></p>
 <p>O meu trabalho consiste nuuma aplicação que neste momento me faz bastante falta.</p>
 <p>Uma aplicação para a gestão de um evento de hotelaria.</p>
 <p>Tornar possivel andar com os dados todos do evento no bolso</p>
@@ -11,16 +10,17 @@ Creating the repository
 <p>ter um layout da sala do evento interativo.</p>
 <p>Fazer uma melhor gestão do staff e atribuição de tarefas.</p>
 <p>possibilidade de exportar um resumo do evento em pdf.</p>
-
-
+<p></p>
+<p></p>
 
 <p>Base de dados</p>
 
 <p>Evento: ID_Evento-</p>
- <p> Tipo</p>
+ <p> <center>Tipo</center></p>
  <p> Nºde pessoas</p>
  <p> Organização</p>
-  
+  <p></p>
+  <p></p>
   <p>Cliente: ID_Cliente</p>
     <p>Id_evento</p>
     <p>Nome</p>
