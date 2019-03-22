@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AppHotel</string>
     <string name="action_settings">Settings</string>
+    <string name="app_hotel">APP HOTEL</string>
+    <string name="staff">Staff</string>
+    <string name="layout_sala">Layout Sala</string>
+    <string name="eventos">Eventos</string>
 </resources>
