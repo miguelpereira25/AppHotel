@@ -3,6 +3,7 @@
 <p></p>
 <p>O meu trabalho consiste nuuma aplicação que neste momento me faz bastante falta.</p>
 <p>Uma aplicação para a gestão de um evento de hotelaria.</p>
+<p>Os objetivos são</p>
 <p>Tornar possivel andar com os dados todos do evento no bolso</p>
 <p>Ter informação dos convidados tais como alergias e diferentes tipos de alimentação(vegan ou vegetariano)</p>
 <p>Ter informação de quem pretence a organização do evento para discutir algum imprevisto.</p>
@@ -29,6 +30,8 @@
     <p>Alimentação</p>
     <p>Alergias</p>
     <p>Função</p>
+    <p></p>
+    <p></p>
     
   <p>Staff</p>
   <p>id_Evento:</p>
