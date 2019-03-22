@@ -57,4 +57,12 @@ public class MainActivity extends AppCompatActivity {
     public void toastEventos(View view) {
         Toast.makeText(MainActivity.this,"Eventos existentes",Toast.LENGTH_LONG).show();
     }
+
+    public void toastStaff(View view) {
+        Toast.makeText(MainActivity.this,"Staff Disponivel",Toast.LENGTH_LONG).show();
+    }
+
+    public void Layout(View view) {
+        Toast.makeText(MainActivity.this,"Layouts existentes/Criar",Toast.LENGTH_LONG).show();
+    }
 }
