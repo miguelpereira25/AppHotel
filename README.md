@@ -29,6 +29,8 @@
     <p>Alimentação</p>
     <p>Alergias</p>
     <p>Função</p>
+    <p></p>
+    <p></p>
     
   <p>Staff</p>
   <p>id_Evento:</p>
