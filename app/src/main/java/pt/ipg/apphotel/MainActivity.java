@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonEvents;
-    private Button buttonAdd;
+
 
 
     @Override
@@ -31,15 +31,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-        buttonAdd= (Button)findViewById(R.id.buttonAdd);
-        buttonAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAddEventos();
-            }
-        });
-
 
 
     }

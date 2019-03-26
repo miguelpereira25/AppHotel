@@ -5,4 +5,6 @@
     <string name="staff">Staff</string>
     <string name="layout_sala">Layout Sala</string>
     <string name="eventos">Eventos</string>
+    <string name="adicionar_evento">Adicionar Evento</string>
+    <string name="Error_Message">Campo Invalido</string>
 </resources>

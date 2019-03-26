@@ -2,13 +2,30 @@ package pt.ipg.apphotel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-public class Eventos extends AppCompatActivity {
+public class Eventos<button> extends AppCompatActivity {
+
+    private Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eventos);
+        button =(Button) findViewById(R.id.buttonAdd);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAddEventos();
+            }
+        });
+    }
+    public void openAddEventos(){
+        Intent intent = new Intent(this, AddEventos.class);
+        startActivity(intent);
     }
 }
