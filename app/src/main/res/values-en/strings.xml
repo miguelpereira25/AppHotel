@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppHotel</string>
+    <string name="action_settings">settings</string>
+    <string name="app_hotel">Hotel App</string>
+    <string name="staff">staff</string>
+    <string name="layout_sala">Room Layout</string>
+    <string name="eventos">Events</string>
+    <string name="adicionar_evento">Add Event</string>
+    <string name="Error_Message">Invalid Section</string>
+    <string name="guardar">Save</string>
+    <string name="observacoes">Observations</string>
+    <string name="cancelar">Cancel</string>
+    <string name="responsavel">Encharged</string>
+    <string name="contacto">Contact</string>
+    <string name="n_pessoas">Nº Persons</string>
+    <string name="data_dd_mm_aaaa">Date(DD-MM-YYYY)</string>
+    <string name="nome_do_evento">Event Name</string>
+</resources>

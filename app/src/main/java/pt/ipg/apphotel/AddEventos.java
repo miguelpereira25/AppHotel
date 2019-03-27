@@ -71,7 +71,8 @@ public class AddEventos extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();Toast.makeText(AddEventos.this,"Dados Guardados",Toast.LENGTH_LONG).show();
+                finish();
+                Toast.makeText(AddEventos.this,"Dados Guardados",Toast.LENGTH_LONG).show();
 
             }
             });
