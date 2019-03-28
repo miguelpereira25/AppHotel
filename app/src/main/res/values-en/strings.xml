@@ -15,5 +15,5 @@
     <string name="contacto">Contact</string>
     <string name="n_pessoas">Nº Persons</string>
     <string name="data_dd_mm_aaaa">Date(DD-MM-YYYY)</string>
-    <string name="nome_do_evento">Event Name</string>
+    <string name="nome_do_evento">"Event "</string>
 </resources>
