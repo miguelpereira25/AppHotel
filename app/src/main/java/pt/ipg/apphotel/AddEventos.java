@@ -35,7 +35,7 @@ public class AddEventos extends AppCompatActivity {
                 if (nomeEvent.trim().length()==0){
                     editTextName.setError(getString(R.string.Error_Message));
                     editTextName.requestFocus();
-                    return;
+
 
                 }
                 EditText editTextDate = findViewById(R.id.editTextDate);
@@ -44,21 +44,21 @@ public class AddEventos extends AppCompatActivity {
                 if (dateEvent.trim().length()==0){
                     editTextDate.setError(getString(R.string.Error_Message));
                     editTextDate.requestFocus();
-                    return;
+
                 }
                 EditText editTextQuantidade = findViewById(R.id.editTextQuantidade);
                 String quantity = editTextQuantidade.getText().toString();
                 if (quantity.trim().length()==0){
                     editTextQuantidade.setError(getString(R.string.Error_Message));
                     editTextQuantidade.requestFocus();
-                    return;
+
                 }
                 EditText editTextResp = findViewById(R.id.editTextResp);
                 String Responsavel = editTextResp.getText().toString();
                 if (Responsavel.trim().length()==0){
                     editTextResp.setError(getString(R.string.Error_Message));
                     editTextResp.requestFocus();
-                    return;
+
                 }
                 EditText editTextContacto = findViewById(R.id.editTextContacto);
                 String Contacto = editTextContacto.getText().toString();
