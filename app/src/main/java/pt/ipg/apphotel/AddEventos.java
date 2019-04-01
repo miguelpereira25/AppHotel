@@ -32,37 +32,37 @@ public class AddEventos extends AppCompatActivity {
                 EditText editTextName = findViewById(R.id.editTextName);
                 String nomeEvent = editTextName.getText().toString();
 
-                if (nomeEvent.trim().length()==0){
+                if (nomeEvent.isEmpty()){
                     editTextName.setError(getString(R.string.Error_Message));
                     editTextName.requestFocus();
-
+                    return;
 
                 }
                 EditText editTextDate = findViewById(R.id.editTextDate);
                 String dateEvent = editTextDate.getText().toString();
 
-                if (dateEvent.trim().length()==0){
+                if (dateEvent.isEmpty()){
                     editTextDate.setError(getString(R.string.Error_Message));
                     editTextDate.requestFocus();
-
+                    return;
                 }
                 EditText editTextQuantidade = findViewById(R.id.editTextQuantidade);
                 String quantity = editTextQuantidade.getText().toString();
-                if (quantity.trim().length()==0){
+                if (quantity.isEmpty()){
                     editTextQuantidade.setError(getString(R.string.Error_Message));
                     editTextQuantidade.requestFocus();
-
+                    return;
                 }
                 EditText editTextResp = findViewById(R.id.editTextResp);
                 String Responsavel = editTextResp.getText().toString();
                 if (Responsavel.trim().length()==0){
                     editTextResp.setError(getString(R.string.Error_Message));
                     editTextResp.requestFocus();
-
+                    return;
                 }
                 EditText editTextContacto = findViewById(R.id.editTextContacto);
                 String Contacto = editTextContacto.getText().toString();
-                if (Contacto.trim().length()==0){
+                if (Contacto.isEmpty()){
                     editTextContacto.setError(getString(R.string.Error_Message));
                     editTextContacto.requestFocus();
                     return;
