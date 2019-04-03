@@ -21,7 +21,7 @@ public class AddEventos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-               Toast.makeText(AddEventos.this,"Operação Cancelada",Toast.LENGTH_LONG).show();
+               Toast.makeText(AddEventos.this,getString(R.string.CancelOPP),Toast.LENGTH_LONG).show();
             }
         }) ;
 
@@ -71,7 +71,7 @@ public class AddEventos extends AppCompatActivity {
                 String Observations = editTextObs.getText().toString();
 
                 finish();
-                Toast.makeText(AddEventos.this,"Dados Guardados",Toast.LENGTH_LONG).show();
+                Toast.makeText(AddEventos.this,getString(R.string.ToastSave),Toast.LENGTH_LONG).show();
 
             }
         });

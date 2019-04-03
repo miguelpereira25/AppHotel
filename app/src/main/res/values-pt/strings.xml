@@ -16,4 +16,13 @@
     <string name="staff">Funcionários</string>
     <string name="data_dd_mm_aaaa">Data (DD-MM-AAAA)</string>
     <string name="nome_do_evento">Evento</string>
+    <string name="name">Nome</string>
+    <string name="N_persons">Nº Pessoas</string>
+    <string name="date">Data</string>
+    <string name="encharged">Responsavel</string>
+    <string name="contact">Contacto</string>
+    <string name="observations">Observações</string>
+    <string name="todo">Todo</string>
+    <string name="CancelOPP">Operação Cancelada</string>
+    <string name="ToastSave">Guardado com sucesso</string>
 </resources>

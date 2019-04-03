@@ -16,10 +16,12 @@
     <string name="data_dd_mm_aaaa">Date(DD-MM-YYYY)</string>
     <string name="nome_do_evento">"Event "</string>
     <string name="name">Name</string>
-    <string name="N_persons">NºPessoas</string>
+    <string name="N_persons">Nº Persons</string>
     <string name="date">Date</string>
     <string name="encharged">Encharged</string>
     <string name="contact">Contact</string>
     <string name="observations">Observations</string>
     <string name="todo">TODO</string>
+    <string name="CancelOPP">Operation canceled</string>
+    <string name="ToastSave">Saved with Success</string>
 </resources>
