@@ -8,7 +8,7 @@
     <string name="Error_Message">Campo Invalido</string>
     <string name="guardar">Guardar</string>
     <string name="observacoes">Observaçoes</string>
-    <string name="cancelar">Cancelar</string>
+    <string name="cancel">Cancelar</string>
     <string name="responsavel">Responsavel</string>
     <string name="contacto">Contacto</string>
     <string name="n_pessoas">Nº Pessoas</string>
@@ -26,5 +26,9 @@
     <string name="CancelOPP">Operação Cancelada</string>
     <string name="ToastSave">Guardado com sucesso</string>
     <string name="edit">Editar</string>
-    <string name="cancel">Cancelar</string>
+    <string name="delete">Apagar</string>
+    <string name="save">Guardar</string>
+    <string name="cancel_edit">Cancelar Edição</string>
+    <string name="SavedChanged">Alterações Guardadas</string>
+    <string name="ActionCanceled">Ação Cancelada</string>
 </resources>

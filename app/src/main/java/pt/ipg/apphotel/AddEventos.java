@@ -10,11 +10,12 @@ import android.widget.Toast;
 
 public class AddEventos extends AppCompatActivity {
     private Button button;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_eventos);
+        
 
         button = (Button) findViewById(R.id.buttonCancel);
         button.setOnClickListener(new View.OnClickListener() {

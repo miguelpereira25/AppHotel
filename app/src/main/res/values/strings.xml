@@ -9,7 +9,7 @@
     <string name="Error_Message">Invalid Section</string>
     <string name="guardar">Save</string>
     <string name="observacoes">Observations</string>
-    <string name="cancelar">Cancel</string>
+    <string name="cancel">Cancel</string>
     <string name="responsavel">Encharged</string>
     <string name="contacto">Contact</string>
     <string name="n_pessoas">Nº Persons</string>
@@ -25,8 +25,9 @@
     <string name="CancelOPP">Operation canceled</string>
     <string name="ToastSave">Saved with Success</string>
     <string name="edit">Edit</string>
-    <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
     <string name="save">Save</string>
-    <string name="cancel">Cancel</string>
+    <string name="cancel_edit">Cancel Edit</string>
+    <string name="SavedChanged">Changes Saved</string>
+    <string name="ActionCanceled">Action Canceled</string>
 </resources>
