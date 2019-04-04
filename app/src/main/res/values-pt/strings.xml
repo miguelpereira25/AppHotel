@@ -25,4 +25,6 @@
     <string name="todo">Todo</string>
     <string name="CancelOPP">Operação Cancelada</string>
     <string name="ToastSave">Guardado com sucesso</string>
+    <string name="edit">Editar</string>
+    <string name="cancel">Cancelar</string>
 </resources>

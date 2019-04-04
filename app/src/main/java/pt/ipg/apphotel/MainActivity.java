@@ -75,4 +75,5 @@ public class MainActivity extends AppCompatActivity {
     public void Layout(View view) {
         Toast.makeText(MainActivity.this,"Layouts existentes/Criar",Toast.LENGTH_LONG).show();
     }
+
 }

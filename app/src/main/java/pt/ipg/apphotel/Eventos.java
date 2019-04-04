@@ -23,9 +23,31 @@ public class Eventos<button> extends AppCompatActivity {
                 openAddEventos();
             }
         });
+        button = (Button) findViewById(R.id.buttonEditEV);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEditEv();
+            }
+        });
+        button = (Button)findViewById(R.id.buttonDeleteEv);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDeleteEv();
+            }
+        });
     }
     public void openAddEventos(){
         Intent intent = new Intent(this, AddEventos.class);
+        startActivity(intent);
+    }
+    public void openEditEv(){
+        Intent intent = new Intent(this,EditEvento.class);
+        startActivity(intent);
+    }
+    public void openDeleteEv(){
+        Intent intent = new Intent(this, DeleteEvento.class);
         startActivity(intent);
     }
 }
