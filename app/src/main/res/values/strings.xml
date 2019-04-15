@@ -30,4 +30,7 @@
     <string name="cancel_edit">Cancel Edit</string>
     <string name="SavedChanged">Changes Saved</string>
     <string name="ActionCanceled">Action Canceled</string>
+    <string name="nib">NIB</string>
+    <string name="social_security">Social Security</string>
+    <string name="add_staff">ADD Staff</string>
 </resources>

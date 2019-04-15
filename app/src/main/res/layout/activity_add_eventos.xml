@@ -21,7 +21,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="@string/name"
             android:inputType="text" />
 
@@ -40,7 +40,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextDate"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="@string/date"
             android:inputType="date" />
 
@@ -60,7 +60,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextQuantidade"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="@string/N_persons"
             android:inputType="number" />
 
@@ -99,7 +99,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextContacto"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="@string/contact"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -118,7 +118,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextObs"
             android:layout_width="match_parent"
-            android:layout_height="98dp"
+            android:layout_height="match_parent"
             android:hint="@string/observations"
             android:inputType="text"
             android:textSize="18sp" />

@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonEvents;
+    private Button buttonStaff;
+    private Button buttonLayout;
 
 
 
@@ -31,11 +33,37 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        buttonStaff = (Button) findViewById(R.id.buttonStaff);
+        buttonStaff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openStaff();
+
+            }
+        });
+        buttonLayout = (Button) findViewById(R.id.buttonLayout);
+        buttonLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLayout();
+            }
+        });
+
+
 
 
     }
     public void openEventos(){
         Intent intent = new Intent(this, Eventos.class);
+        startActivity(intent);
+    }
+    public void openStaff(){
+        Intent intent = new Intent(this, StaffGeneral.class);
+        startActivity(intent);
+
+    }
+    private void openLayout(){
+        Intent intent = new Intent(this, Layout.class);
         startActivity(intent);
     }
     public void openAddEventos(){

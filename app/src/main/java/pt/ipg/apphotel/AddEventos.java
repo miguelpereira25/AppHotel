@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class AddEventos extends AppCompatActivity {
     private Button button;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
