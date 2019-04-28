@@ -21,11 +21,31 @@ public class StaffGeneral extends AppCompatActivity {
                 openStaff();
             }
         });
+        button = (Button) findViewById(R.id.buttonEdit);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openEdit();
+            }
+        });
+      /*  button = (Button) findViewById(R.id.buttonDeleteStaff);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDelete();
+            }
+        });*/
+
+      //ainda não existe uma ligacao á base de dados para eliminar nada portanto o programa pediria sempre introdução de dados em validação
 
 
     }
     public void openStaff(){
         Intent intent = new Intent(this,Staff.class);
+        startActivity(intent);
+    }
+    public void openEdit(){
+        Intent intent = new Intent(this, EditStaff.class);
         startActivity(intent);
     }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class EditEvento extends AppCompatActivity {
@@ -13,14 +14,6 @@ public class EditEvento extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_evento);
-        button= (Button) findViewById(R.id.buttonSaveEdit);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-                Toast.makeText(EditEvento.this,getString(R.string.SavedChanged),Toast.LENGTH_LONG).show();
-            }
-        });
         button =(Button) findViewById(R.id.buttonCancelEdit);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +22,59 @@ public class EditEvento extends AppCompatActivity {
                 Toast.makeText(EditEvento.this,getString(R.string.ActionCanceled),Toast.LENGTH_LONG).show();
             }
         });
+
+
+
+        button= (Button) findViewById(R.id.buttonSaveEdit);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText editTextName = findViewById(R.id.editTextName);
+                String nomeEvent = editTextName.getText().toString();
+
+                if (nomeEvent.isEmpty()){
+                    editTextName.setError(getString(R.string.Error_Message));
+                    editTextName.requestFocus();
+                    return;
+
+                }
+                EditText editTextDate = findViewById(R.id.editTextDate);
+                String dateEvent = editTextDate.getText().toString();
+
+                if (dateEvent.isEmpty()){
+                    editTextDate.setError(getString(R.string.Error_Message));
+                    editTextDate.requestFocus();
+                    return;
+                }
+                EditText editTextQuantidade = findViewById(R.id.editTextQuantidade);
+                String quantity = editTextQuantidade.getText().toString();
+                if (quantity.isEmpty()){
+                    editTextQuantidade.setError(getString(R.string.Error_Message));
+                    editTextQuantidade.requestFocus();
+                    return;
+                }
+                EditText editTextResp = findViewById(R.id.editTextResp);
+                String Responsavel = editTextResp.getText().toString();
+                if (Responsavel.trim().length()==0){
+                    editTextResp.setError(getString(R.string.Error_Message));
+                    editTextResp.requestFocus();
+                    return;
+                }
+                EditText editTextContacto = findViewById(R.id.editTextContacto);
+                String Contacto = editTextContacto.getText().toString();
+                if (Contacto.isEmpty()){
+                    editTextContacto.setError(getString(R.string.Error_Message));
+                    editTextContacto.requestFocus();
+                    return;
+                }
+                EditText editTextObs = findViewById(R.id.editTextObs);
+                String Observations = editTextObs.getText().toString();
+
+                finish();
+                Toast.makeText(EditEvento.this,getString(R.string.SavedChanged),Toast.LENGTH_LONG).show();
+            }
+        });
+
 
     }
 }

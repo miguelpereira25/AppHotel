@@ -23,7 +23,7 @@ public class Staff extends AppCompatActivity {
                 Toast.makeText(Staff.this,getString(R.string.CancelOPP),Toast.LENGTH_LONG).show();
             }
         });
-        button = (Button) findViewById(R.id.buttonSave);
+        button = (Button) findViewById(R.id.buttonSaveEdit);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

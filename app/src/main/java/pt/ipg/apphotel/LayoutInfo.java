@@ -21,10 +21,10 @@ public class LayoutInfo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Toast.makeText(Layout.this,getString(R.string.CancelOPP), Toast.LENGTH_LONG).show();
+                Toast.makeText(LayoutInfo.this,getString(R.string.CancelOPP), Toast.LENGTH_LONG).show();
             }
         });
-        button = (Button) findViewById(R.id.buttonSave);
+        button = (Button) findViewById(R.id.buttonSaveEdit);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

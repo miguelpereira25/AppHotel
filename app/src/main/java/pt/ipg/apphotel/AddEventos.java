@@ -26,7 +26,7 @@ public class AddEventos extends AppCompatActivity {
             }
         }) ;
 
-        button = (Button) findViewById(R.id.buttonSave);
+        button = (Button) findViewById(R.id.buttonSaveEdit);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
