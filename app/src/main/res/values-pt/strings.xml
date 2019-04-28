@@ -31,4 +31,14 @@
     <string name="cancel_edit">Cancelar Edição</string>
     <string name="SavedChanged">Alterações Guardadas</string>
     <string name="ActionCanceled">Ação Cancelada</string>
+    <string name="nib">NIB</string>
+    <string name="social_security">Segurança Social</string>
+    <string name="add_staff">Add Funcionarios</string>
+    <string name="image">Imagem</string>
+    <string name="layouts">Layouts</string>
+    <string name="add_layout">Adicionar Layout</string>
+    <string name="layout_info">Informaçao Layout</string>
+    <string name="alergies">Alergias</string>
+    <string name="vegetarians">Vegetarianos</string>
+    <string name="vegan">Vegans</string>
 </resources>

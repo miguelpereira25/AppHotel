@@ -33,4 +33,11 @@
     <string name="nib">NIB</string>
     <string name="social_security">Social Security</string>
     <string name="add_staff">ADD Staff</string>
+    <string name="image">Image</string>
+    <string name="layouts">Layouts</string>
+    <string name="add_layout">Add Layout</string>
+    <string name="layout_info">Layout Info +</string>
+    <string name="alergies">Alergies</string>
+    <string name="vegetarians">Vegetarians</string>
+    <string name="vegan">Vegan</string>
 </resources>
