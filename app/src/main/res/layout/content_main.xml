@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonEvents" />
 
     <Button
-        android:id="@+id/buttonLayout"
+        android:id="@+id/buttonLayoutNew"
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:layout_marginStart="8dp"

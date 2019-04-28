@@ -16,7 +16,7 @@ public class LayoutInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_info);
-        button = (Button) findViewById(R.id.buttonCancel);
+       button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +65,7 @@ public class LayoutInfo extends AppCompatActivity {
                 }
                 finish();
                 Toast.makeText(LayoutInfo.this, getString(R.string.ToastSave),Toast.LENGTH_LONG).show();
+
             }
         });
     }

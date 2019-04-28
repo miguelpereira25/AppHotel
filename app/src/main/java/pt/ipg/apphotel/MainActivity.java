@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        buttonLayout = (Button) findViewById(R.id.buttonLayout);
+        buttonLayout = (Button) findViewById(R.id.buttonLayoutNew);
         buttonLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

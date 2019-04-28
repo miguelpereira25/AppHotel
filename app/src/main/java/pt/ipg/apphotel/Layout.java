@@ -23,7 +23,7 @@ public class Layout extends AppCompatActivity {
                 openAddLayout();
             }
         });
-        button = (Button) findViewById(R.id.buttonLayout);
+        button = (Button) findViewById(R.id.buttonLayoutNew);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
