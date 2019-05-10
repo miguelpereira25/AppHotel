@@ -41,4 +41,6 @@
     <string name="alergies">Alergias</string>
     <string name="vegetarians">Vegetarianos</string>
     <string name="vegan">Vegans</string>
+    <string name="add_event">Adicionar Evento</string>
+    <string name="edit_event">Editar Evento</string>
 </resources>

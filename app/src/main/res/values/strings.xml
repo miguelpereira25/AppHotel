@@ -2,7 +2,7 @@
     <string name="app_name">AppHotel</string>
     <string name="action_settings">settings</string>
     <string name="app_hotel">Hotel App</string>
-    <string name="staff">staff</string>
+    <string name="staff">Staff</string>
     <string name="layout_sala">Room Layout</string>
     <string name="eventos">Events</string>
     <string name="adicionar_evento">Add Event</string>
@@ -40,4 +40,6 @@
     <string name="alergies">Alergies</string>
     <string name="vegetarians">Vegetarians</string>
     <string name="vegan">Vegan</string>
+    <string name="add_event">Add Event</string>
+    <string name="edit_event">Edit Event</string>
 </resources>
