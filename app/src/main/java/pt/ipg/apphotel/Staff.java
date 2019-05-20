@@ -11,17 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class Staff extends AppCompatActivity implements BaseColumns {
-    public static final String Staff = "Staff";
-    public static final String nomeStaff = "nome staff";
-    public static final String contactStaff = "Contact Staff";
-    public static final String nibStaff = "NIB Staff";
-    public static final String socialNumber = "SS Number";
-    //public static final String[] TODAS= new String[] { _ID,Staff,nomeStaff,contactStaff,nibStaff,socialNumber };
-    private SQLiteDatabase db;
-    public Staff (SQLiteDatabase db){
-    this.db = db;
-    }
+public class Staff extends AppCompatActivity  {
+
 
 
 
