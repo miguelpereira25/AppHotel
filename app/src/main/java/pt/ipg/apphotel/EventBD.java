@@ -89,6 +89,7 @@ public class EventBD {
         long Data = cursor.getLong(cursor.getColumnIndex(BDTabelaEventos.CAMPO_DATA));
         long Quantidade = cursor.getLong(cursor.getColumnIndex(BDTabelaEventos.CAMPO_QUANTIDADE));
         String Responsavel = cursor.getString(cursor.getColumnIndex(BDTabelaEventos.CAMPO_RESPONSAVEL));
+        long Contacto = cursor.getLong(cursor.getColumnIndex(BDTabelaEventos.CAMPO_CONTACTO));
         String Observacoes = cursor.getString(cursor.getColumnIndex(BDTabelaEventos.CAMPO_OBS));
 
         EventBD evento =new EventBD();
