@@ -46,8 +46,10 @@ public class BDTest {
 
             BDEventoOpenHelper openHelper = new BDEventoOpenHelper(getAppContext());
             SQLiteDatabase db = openHelper.getWritableDatabase();
+
+
             /************
-             *Operaçoda tabela evventos *
+             *Operaçoda tabela eventos *
              ************/
             BDTabelaEventos tabelaEventos = new BDTabelaEventos(db);
             //test read Eventos
@@ -55,10 +57,10 @@ public class BDTest {
             assertEquals(0,cursorEventos.getCount());
             //test create/read Eventos
             String nome_evento = "Casamento Rui e Joana";
-            long data = "25/02/2020";
-            long quantidade ="120";
+            int data = 25/02/2020;
+            int quantidade =120;
             String nome_responsavel = "Rita Barroso";
-            long Contacto ="964255960";
+            int Contacto =964255960;
             String Observacoes ="Nada a declarar";
             long idCasamento = criaEvento(tabelaEventos, nome_evento, data,quantidade,nome_responsavel, Contacto, Observacoes);
 
@@ -73,16 +75,29 @@ public class BDTest {
             assertEquals(Contacto, eventBD.getContacto());
             assertEquals(Observacoes, eventBD.getObservacoes());
 
+
             /*************************************/
 
-            String nome_evento = "Congresso Medicina dentaria";
-            long idMedicina = criaEvento(tabelaEventos, nome_evento);
+            nome_evento = "Congresso Medicina dentaria";
+            data = 19/02/2020;
+            quantidade = 200;
+            nome_responsavel = "Joao Bras";
+            Contacto = 925656002;
+            Observacoes ="3 Cofee breaks completos verificar folha";
+
+            long idMedicina = criaEvento(tabelaEventos, nome_evento,data,quantidade,nome_responsavel,Contacto,Observacoes);
 
             cursorEventos = getEvento(tabelaEventos);
             assertEquals(1, cursorEventos.getCount());
 
-            EventBD eventBD = getEventoComID(cursorEventos, idMedicina);
+            eventBD = getEventoComID(cursorEventos, idMedicina);
             assertEquals(nome_evento, eventBD.getEvento());
+            assertEquals(data,eventBD.getData());
+            assertEquals(quantidade,eventBD.getQuantidade());
+            assertEquals(nome_responsavel,eventBD.getResponsavel());
+            assertEquals(Contacto,eventBD.getContacto());
+            assertEquals(Observacoes,eventBD.getObservacoes());
+
 
 
             //Teste Update/Read Evento
@@ -100,9 +115,11 @@ public class BDTest {
             assertEquals(nome_evento, eventBD.getEvento());
 
             //Teste Create/delete/read tipo
-            long id = criaEvento(tabelaEventos, "TESTE");
+            long id = criaEvento(tabelaEventos, "Casamento Rui e Joana",25/02/2020,120,"Rita Barroso",964255960,"Nada a declarar" );
             cursorEventos = getEvento(tabelaEventos);
-            assertEquals(3, cursorEventos.getCount());
+            assertEquals(3,cursorEventos.getCount());
+
+
 
             tabelaEventos.delete(BDTabelaEventos._ID + "=?", new String[] {String.valueOf(id)});
             cursorEventos = getEvento(tabelaEventos);
@@ -123,24 +140,35 @@ public class BDTest {
 
             //Teste create/read Serviço
             String nome_staff = "João";
-            long idJoao = criaStaff(tabelaStaff, nome_staff);
+            long ContactoStaff = 917220260;
+            long Nib = 1234567891;//put the rest in obs
+            long SocialSecurity = 123456789;
 
+            long idJoao = criaStaff(tabelaStaff, nome_staff,ContactoStaff,Nib,SocialSecurity );
             cursorStaff = getStaff(tabelaStaff);
             assertEquals(1, cursorStaff.getCount());
 
             StaffBD staffBD = getStaffComID(cursorStaff, idJoao);
-
             assertEquals(nome_staff, staffBD.getNomeStaff());
+            assertEquals(ContactoStaff, staffBD.getContactoStaff());
+            assertEquals(Nib, staffBD.getNib());
+            assertEquals(SocialSecurity, staffBD.getSocialSecurity());
+
 
             nome_staff = "Antonio";
-            long idAntonio = criaStaff(tabelaStaff, nome_staff);
-
+            ContactoStaff = 914522650;
+            Nib = 1234567891;
+            SocialSecurity = 987654321;
+            long idAntonio = criaStaff(tabelaStaff, nome_staff, ContactoStaff,Nib,SocialSecurity);
             cursorStaff = getStaff(tabelaStaff);
             assertEquals(2, cursorStaff.getCount());
 
             staffBD = getStaffComID(cursorStaff, idAntonio);
-
             assertEquals(nome_staff, staffBD.getNomeStaff());
+            assertEquals(ContactoStaff, staffBD.getContactoStaff());
+            assertEquals(Nib, staffBD.getNib());
+            assertEquals(SocialSecurity, staffBD.getSocialSecurity());
+
 
             //Teste Update/Read servico
             nome_staff = "João / Antonio";
@@ -157,7 +185,7 @@ public class BDTest {
             assertEquals(nome_staff, staffBD.getNomeStaff());
 
             //Teste Create/delete/read Staff
-            id = criaStaff(tabelaStaff, "TESTE");
+            id = criaStaff(tabelaStaff, "João", 917220268, 1234567891,123456789);
             cursorStaff = getStaff(tabelaStaff);
             assertEquals(3, cursorStaff.getCount());
 
@@ -169,12 +197,91 @@ public class BDTest {
             getStaffComID(cursorStaff, idJoao);
 
 
+            /*******************************
+             * Operações da Tabela Layout info*
+             *******************************/
+
+            BDTabelaLayoutInfo tabelaLayoutInfo = new BDTabelaLayoutInfo(db);
+
+            //Teste read Serviço
+            Cursor cursorLayoutInfo = getLayoutInfo(tabelaLayoutInfo);
+            assertEquals(0, cursorLayoutInfo.getCount());
+
+            //Teste create/read Serviço
+            String nome_Evento= "Casamento Rui e Joana";
+            long Data =25/02/2020;
+            long Vegan = 2;
+            long Vegeta = 3;
+            long Alergias = 0;
+
+            long idCasamentoLayout = criaLayoutInfo(tabelaLayoutInfo, nome_Evento,Data,Vegan,Vegeta,Alergias);
+            cursorLayoutInfo = getLayoutInfo(tabelaLayoutInfo);
+            assertEquals(1, cursorLayoutInfo.getCount());
+
+            LayoutInfoBD layoutInfoBD = getLayoutInfoComId(cursorLayoutInfo, idCasamentoLayout);
+            assertEquals(nome_Evento, layoutInfoBD.getEvento());
+            assertEquals(Data, layoutInfoBD.getData());
+            assertEquals(Vegan,layoutInfoBD.getVegan());
+            assertEquals(Vegeta, layoutInfoBD.getVegeta());
+            assertEquals(Alergias,layoutInfoBD.getAlergias());
+
+
+            nome_Evento="Congresso Medicina Dentaria";
+            Data =19/02/2020;
+            Vegan = 5;
+            Vegeta = 1;
+            Alergias = 10;
+
+            long idMedicinaLayout = criaLayoutInfo(tabelaLayoutInfo, nome_Evento,Data,Vegan,Vegeta,Alergias);
+            cursorLayoutInfo = getLayoutInfo(tabelaLayoutInfo);
+            assertEquals(1, cursorLayoutInfo.getCount());
+
+            layoutInfoBD = getLayoutInfoComId(cursorLayoutInfo, idMedicinaLayout);
+            assertEquals(nome_Evento, layoutInfoBD.getEvento());
+            assertEquals(Data, layoutInfoBD.getData());
+            assertEquals(Vegan,layoutInfoBD.getVegan());
+            assertEquals(Vegeta, layoutInfoBD.getVegeta());
+            assertEquals(Alergias,layoutInfoBD.getAlergias());
+
+
+            //Teste Update/Read layout
+            nome_Evento = "Casamento Rui e Joana / Casamento Rui e Joana";
+            layoutInfoBD.setEvento(nome_Evento);
+
+
+            int registoAlteradoLayout = tabelaStaff.update(staffBD.getContentValues(), BDTabelaStaff._ID + "=?", new String[] {String.valueOf(idJoao)});
+
+            assertEquals(1, registoAlteradoLayout);
+
+            cursorLayoutInfo = getLayoutInfo(tabelaLayoutInfo);
+            layoutInfoBD = getLayoutInfoComId(cursorLayoutInfo, idCasamentoLayout);
+
+            assertEquals(nome_Evento, layoutInfoBD.getEvento());
+            assertEquals(Data, layoutInfoBD.getData());
+            assertEquals(Vegan,layoutInfoBD.getVegan());
+            assertEquals(Vegeta, layoutInfoBD.getVegeta());
+            assertEquals(Alergias,layoutInfoBD.getAlergias());
+
+
+
+            //Teste Create/delete/read Layout
+            id = criaLayoutInfo(tabelaLayoutInfo,"Casamento Rui e Joana", 25/02/2020,2,3,0 );
+            cursorLayoutInfo = getLayoutInfo(tabelaLayoutInfo);
+            assertEquals(3, cursorLayoutInfo.getCount());
+
+            tabelaLayoutInfo.delete(BDTabelaLayoutInfo._ID + "=?", new String[] {String.valueOf(id)});
+            cursorLayoutInfo = getLayoutInfo(tabelaLayoutInfo);
+            assertEquals(2, cursorLayoutInfo.getCount());
+
+            getStaffComID(cursorLayoutInfo, idCasamentoLayout);
+            getStaffComID(cursorStaff, idMedicinaLayout);
+
 
 
 
     }
     //Tabela Eventos
-    private long criaEvento(BDTabelaEventos tabelaEventos, String Evento,long Data,long Quantidade,String Responsavel,String Observacoes) {
+    private long criaEvento(BDTabelaEventos tabelaEventos, String Evento,int Data,int Quantidade,String Responsavel, int Contacto,String Observacoes) {
 
 
         EventBD evento = new EventBD();
@@ -182,6 +289,7 @@ public class BDTest {
         evento.setData(Data);
         evento.setQuantidade(Quantidade);
         evento.setResponsavel(Responsavel);
+        evento.setContacto(Contacto);
         evento.setObservacoes(Observacoes);
 
 

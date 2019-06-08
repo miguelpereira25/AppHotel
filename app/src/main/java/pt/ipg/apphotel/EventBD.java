@@ -7,10 +7,10 @@ public class EventBD {
 
     private long id;
     private String Evento;
-    private long Data;
-    private long Quantidade;
+    private int Data;
+    private int Quantidade;
     private String Responsavel;
-    private long Contacto;
+    private int Contacto;
     private String Observacoes;
 
 
@@ -30,19 +30,19 @@ public class EventBD {
         this.Evento = Evento;
     }
 
-    public long getData() {
+    public int getData() {
         return Data;
     }
 
-    public void setData(long Data) {
+    public void setData(int Data) {
         this.Data = Data;
     }
 
-    public long getQuantidade() {
+    public int getQuantidade() {
         return Quantidade;
     }
 
-    public void setQuantidade(long Quantidade) {
+    public void setQuantidade(int Quantidade) {
         this.Quantidade = Quantidade;
     }
 
@@ -54,11 +54,11 @@ public class EventBD {
         this.Responsavel = Responsavel;
     }
 
-    public long getContacto() {
+    public int getContacto() {
         return Contacto;
     }
 
-    public void setContacto(long Contacto) {
+    public void setContacto(int Contacto) {
         this.Contacto = Contacto;
     }
 
@@ -86,10 +86,10 @@ public class EventBD {
     public static EventBD fromCursor(Cursor cursor) {
         long id = cursor.getLong(cursor.getColumnIndex(BDTabelaEventos._ID));
         String Evento = cursor.getString(cursor.getColumnIndex(BDTabelaEventos.CAMPO_EVENTO));
-        long Data = cursor.getLong(cursor.getColumnIndex(BDTabelaEventos.CAMPO_DATA));
-        long Quantidade = cursor.getLong(cursor.getColumnIndex(BDTabelaEventos.CAMPO_QUANTIDADE));
+        int Data = cursor.getInt(cursor.getColumnIndex(BDTabelaEventos.CAMPO_DATA));
+        int Quantidade = cursor.getInt(cursor.getColumnIndex(BDTabelaEventos.CAMPO_QUANTIDADE));
         String Responsavel = cursor.getString(cursor.getColumnIndex(BDTabelaEventos.CAMPO_RESPONSAVEL));
-        long Contacto = cursor.getLong(cursor.getColumnIndex(BDTabelaEventos.CAMPO_CONTACTO));
+        int Contacto = cursor.getInt(cursor.getColumnIndex(BDTabelaEventos.CAMPO_CONTACTO));
         String Observacoes = cursor.getString(cursor.getColumnIndex(BDTabelaEventos.CAMPO_OBS));
 
         EventBD evento =new EventBD();
@@ -98,8 +98,9 @@ public class EventBD {
         evento.setId(id);
         evento.setEvento(Evento);
         evento.setData(Data);
-        evento.setQuantidade(Quantidade);
+        evento.setQuantidade( Quantidade);
         evento.setResponsavel(Responsavel);
+        evento.setContacto(Contacto);
         evento.setObservacoes(Observacoes);
         return evento;
 
